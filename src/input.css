@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+    --animate-bounce: bounce 0.2s infinite;
+    --animate-trackMove: trackMove  linear 16s infinite;
+    --animate-carMove: carMove  linear 20s infinite;
+    @keyframes bounceX {
+
+        0%,
+        100% {
+            transform: translateX(-0.05%);
+            animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+        }
+
+        50% {
+            transform: none;
+            animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+        }
+    }
+    @keyframes bounce {
+
+        0%,
+        100% {
+            transform: translateY(-3%);
+            animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+        }
+
+        50% {
+            transform: none;
+            animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+        }
+    }
+    @keyframes trackMove {
+        100%{
+            transform : translateX(-500vw);
+        }
+    }
+    @keyframes carMove {
+        0%{
+            transform : translateX(5vw);
+
+        }
+        100%{
+            transform : translateX(110vw);
+        }
+    }
+}
