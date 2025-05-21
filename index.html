@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/output.css" />
+  </head>
+  <body class="overflow-hidden">
+    <div>
+      <div
+        id="sky"
+        class="bg-[url('./image/background.jpg')] bg-cover h-screen relative animate-bounceX"
+      >
+        <button
+          id="playSound"
+          class="z-50 absolute top-4 left-4 bg-white p-2 rounded"
+        >
+          🔊 Play Sound
+        </button>
+        <div
+          id="trees"
+          class="bg-[url('./image/trees.png')] bg-cover w-full h-screen absolute top-[-24vh]"
+        ></div>
+        <div
+          id="track"
+          class="bg-[url('./image/track.png')] w-[800vw] h-64 absolute top-[30rem] animate-trackMove"
+        ></div>
+        <div
+          id="car"
+          class="bg-[url('./image/car_body.png')] bg-cover w-[16rem] h-18 absolute top-110 left-[-10rem]  animate-bounce animate-carMove"
+        >
+          <div
+            class="bg-[url('./image/car_wheel_left.png')] bg-cover w-[3rem] h-12 absolute left-8 top-7 animate-spin"
+          ></div>
+          <div
+            class="bg-[url('./image/car_wheel_right.png')] bg-cover w-[3rem] h-12 absolute right-12 top-8 animate-spin"
+          ></div>
+        </div>
+      </div>
+    </div>
+    <script src="./src/js/script.js"></script>
+  </body>
+</html>
